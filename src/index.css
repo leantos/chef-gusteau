@@ -1,7 +1,9 @@
 body{
     margin: 0;
-    background-color: rgb(255, 253, 250);
+    background-color: rgb(254, 254, 245);
 }
+
+/* header */
 
 .chef-logo{
     width: 100px;
@@ -9,13 +11,55 @@ body{
 }
 
 .header{
-    border-radius: 20px;
-    box-shadow: black 0px 0px 10px;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .site-title{
-    font-family: 'Playfair Display';
+    font-family: 'Josefin sans';
+    font-weight: 350;
+    font-size: 40px;
+}
+
+/* main */
+
+main{
+    padding: 10px;
+}
+
+.add-ingredient{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+    height: 38px;
+}
+
+.add-ingredient input{
+    font-family: 'Montserrat';
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    padding: 9px 13px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.53);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.add-ingredient button{
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.53);
+    font-family: 'Montserrat';
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 6px;
+}
+
+.add-ingredient button::before{
+    content: '+';
+    margin-right: 9px;
 }

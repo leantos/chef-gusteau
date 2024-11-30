@@ -1,5 +1,4 @@
 const logo='/src/assets/chef.svg';
-
 export function Header(){
     return(
         <div className="header">
