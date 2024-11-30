@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 253, 250);
+}
+
+.chef-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.header{
+    border-radius: 20px;
+    box-shadow: black 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-title{
+    font-family: 'Playfair Display';
+}
