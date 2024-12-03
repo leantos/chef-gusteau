@@ -24,17 +24,24 @@ export function Main() {
         />
         <button>Add Ingredient</button>
       </form>
-      <div className="ingredient-display">
-        <h1 className="ingredients-heading">Ingredients on hand :</h1>
-        <ul className="list-ingredients">{list}</ul>
-      </div>
-      <div className="get-recipe-container">
-        <div>
-          <h3 className="recipe-h3">Ready for a recipe?</h3>
-          <p className="recipe-p">Generate a recipe from your list of ingredients</p>
-        </div>
-        <button className="get-recipe">Get a Recipe</button>
-      </div>
+      {ingredients.length > 0 ? 
+        <>
+          <div className="ingredient-display">
+            <h1 className="ingredients-heading">Ingredients on hand :</h1>
+            <ul className="list-ingredients">{list}</ul>
+          </div>
+          <div className="get-recipe-container">
+            <div>
+              <h3 className="recipe-h3">Ready for a recipe?</h3>
+              <p className="recipe-p">
+                Generate a recipe from your list of ingredients
+              </p>
+            </div>
+            <button className="get-recipe">Get a Recipe</button>
+          </div>
+        </>
+        : null
+      }
     </main>
   );
 }
