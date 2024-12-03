@@ -52,6 +52,7 @@ main {
 }
 
 .add-ingredient button {
+  transition: transform 0.25s ease-in-out;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.53);
   font-family: "Montserrat";
   border: none;
@@ -63,6 +64,10 @@ main {
 .add-ingredient button::before {
   content: "+";
   margin-right: 9px;
+}
+
+.add-ingredient button:hover {
+  transform: scale(1.1);
 }
 
 /* list of ingredients */
