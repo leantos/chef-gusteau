@@ -75,9 +75,9 @@ body {
 
 .ingredients-heading{
   font-family: "Playfair Display";
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 25px;
   margin-left: 30px;
-  font-size: 30px;
 }
 
 /* list of ingredients */
@@ -127,4 +127,18 @@ body {
 
 .get-recipe:hover{
   transform: scale(1.05);
+}
+
+.suggested-recipe-container{
+  margin: 30px;
+  font-family:'Montserrat';
+  font-size: 15px;
+}
+
+.recipe-h2{
+  font-size: 25px;
+  margin: 30px;
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  color: darkslategrey;
 }
