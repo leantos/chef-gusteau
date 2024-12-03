@@ -64,3 +64,12 @@ main {
   content: "+";
   margin-right: 9px;
 }
+
+/* list of ingredients */
+
+.list-ingredients li{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 5px;
+}

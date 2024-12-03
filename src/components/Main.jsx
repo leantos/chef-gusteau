@@ -2,7 +2,7 @@ import React from "react";
 
 export function Main() {
   const [ingredients, setIngredients] = React.useState([]);
-  
+
   const list = ingredients.map((ingredients) => (
     <li key={ingredients}>{ingredients}</li>
   ));
@@ -25,7 +25,7 @@ export function Main() {
         />
         <button>Add Ingredient</button>
       </form>
-      <ul>{list}</ul>
+      <ul className="list-ingredients">{list}</ul>
     </main>
   );
 }
