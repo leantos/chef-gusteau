@@ -1,19 +1,18 @@
+import React from "react";
+
 export function Main() {
-  const ingredients = ["Chicken", "Oregano", "Tomatoes"];
+  const [ingredients, setIngredients] = React.useState([]);
+  
+  const list = ingredients.map((ingredients) => (
+    <li key={ingredients}>{ingredients}</li>
+  ));
 
   function onsubmitted(event) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("ingredient");
-
-    ingredients.push(newIngredient);
-
-    alert(ingredients);
+    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
   }
-
-  const list = ingredients.map((ingredients) => (
-    <li key={ingredients}>{ingredients}</li>
-  ));
 
   return (
     <main>
