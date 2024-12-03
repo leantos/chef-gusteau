@@ -29,7 +29,7 @@ body {
 
 /* main */
 
-main {
+.main {
   padding: 10px;
 }
 
@@ -42,7 +42,7 @@ main {
 }
 
 .add-ingredient input {
-  font-family: "Montserrat";
+  font-family: "Parkinsans";
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, 0.192);
   padding: 9px 13px;
@@ -66,12 +66,65 @@ main {
   margin-right: 9px;
 }
 
+.ingredient-display{
+  margin-top: 35px;
+
+}
+
+/* heading of ingredients */
+
+.ingredients-heading{
+  font-family: "Playfair Display";
+  font-weight: 700;
+  margin-left: 30px;
+  font-size: 30px;
+}
 
 /* list of ingredients */
 
-.list-ingredients li {
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 14px;
-  padding-top: 5px;
+.list-ingredients li{
+  margin-left: 10px;
+  font-family: "Parkinsans";
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Box */
+
+.get-recipe-container{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgoldenrodyellow;
+  margin: 50px 20px;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+
+.recipe-h3{
+  font-family: 'Playfair Display';
+  font-size: 20px;
+}
+
+.recipe-p{
+  margin-top: -10px;
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+.get-recipe{
+  background-color: rgb(193, 106, 0);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px grey;
+  font-family: 'Parkinsans';
+  transition: transform 0.2s ease-in-out;
+}
+
+.get-recipe:hover{
+  transform: scale(1.05);
 }

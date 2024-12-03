@@ -4,7 +4,7 @@ export function Main() {
   const [ingredients, setIngredients] = React.useState([]);
 
   function addIngredient(event) {
-    event.preventDefault()
+    event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("ingredient");
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
@@ -24,7 +24,17 @@ export function Main() {
         />
         <button>Add Ingredient</button>
       </form>
-      <ul className="list-ingredients">{list}</ul>
+      <div className="ingredient-display">
+        <h1 className="ingredients-heading">Ingredients on hand :</h1>
+        <ul className="list-ingredients">{list}</ul>
+      </div>
+      <div className="get-recipe-container">
+        <div>
+          <h3 className="recipe-h3">Ready for a recipe?</h3>
+          <p className="recipe-p">Generate a recipe from your list of ingredients</p>
+        </div>
+        <button className="get-recipe">Get a Recipe</button>
+      </div>
     </main>
   );
 }
