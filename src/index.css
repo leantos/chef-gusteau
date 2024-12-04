@@ -75,6 +75,7 @@ body {
 
 .ingredients-heading{
   font-family: "Playfair Display";
+  color: rgb(21, 52, 52);
   font-weight: 500;
   font-size: 25px;
   margin-left: 30px;
@@ -85,7 +86,7 @@ body {
 .list-ingredients li{
   margin-left: 10px;
   font-family: "Parkinsans";
-  color: rgba(0, 0, 0, 0.7);
+  color: #000000;
   font-weight: 500;
   font-size: 16px;
 }
@@ -140,5 +141,5 @@ body {
   margin: 30px;
   font-family: 'Playfair Display';
   font-weight: 500;
-  color: darkslategrey;
+  color: rgb(21, 52, 52);
 }
