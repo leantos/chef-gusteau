@@ -1,5 +1,5 @@
 import React from "react";
-import { ClaudeRecipe } from "./ClaudeRecipe";
+import { AiRecipe } from "./AiRecipe";
 import { IngredientList } from "./IngredientList";
 
 export function Main() {
@@ -44,7 +44,7 @@ export function Main() {
 
       {/* Recipe */}
 
-      {recipeShown ? <ClaudeRecipe /> : null}
+      {recipeShown ? <AiRecipe /> : null}
     </main>
   );
 }
