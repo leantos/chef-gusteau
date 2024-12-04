@@ -143,3 +143,26 @@ body {
   font-weight: 500;
   color: rgb(21, 52, 52);
 }
+
+/* recipe container */
+
+.recipe-response-container{
+  margin: 10px 30px;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  color: #000000;
+}
+
+.recipe-response-container li{
+  color: black;
+  font-family: 'Parkinsans';
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.recipe-response-container p{
+  color: black;
+  font-family: 'Rubik';
+  font-size: 18px;
+  font-weight: 200;
+}

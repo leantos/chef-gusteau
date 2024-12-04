@@ -5,12 +5,14 @@ import { getRecipeFromMistral } from "../ai";
 
 export function Main() {
   const [ingredients, setIngredients] = React.useState([]);
+  const inputRef=React.useRef(null);
 
   function addIngredient(event) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("ingredient");
     setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+    inputRef.current.value=""
   }
   const list = ingredients.map((ingredients) => (
     <li key={ingredients}>{ingredients}</li>
@@ -27,12 +29,14 @@ export function Main() {
     <main>
       <form onSubmit={addIngredient} className="add-ingredient">
         <input
+          ref={inputRef}
+          id='input'
           type="text"
           aria-label="Add Ingredient"
           placeholder="e.g. oregano"
           name="ingredient"
         />
-        <button>Add Ingredient</button>
+        <button onClick='clearInput'>Add Ingredient</button>
       </form>
 
       {/* Hide the display till one ingredient is entered */}
