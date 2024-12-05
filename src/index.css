@@ -18,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0px 0px 5px 5px;
 }
 
 .site-title {
@@ -87,8 +88,8 @@ body {
   margin-left: 10px;
   font-family: "Parkinsans";
   color: #000000;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 17px;
 }
 
 /* Box */
@@ -184,6 +185,8 @@ body::after{
   position: fixed;
   width: 100%;
   bottom: 0;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 0px 1px black;
 }
 
 .footer-container h3{
