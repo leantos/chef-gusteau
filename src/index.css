@@ -166,3 +166,28 @@ body {
   font-size: 18px;
   font-weight: 200;
 }
+
+/* Footer */
+
+body::after{
+  content: '';
+  display: block;
+  height: 30px;
+}
+
+.footer-container{
+  background-color: white;
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-container h3{
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 500;
+}
