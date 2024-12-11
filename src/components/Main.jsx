@@ -27,7 +27,7 @@ export function Main() {
 
   return (
     <main>
-      <form onSubmit={addIngredient} className="add-ingredient">
+      <form onSubmit={addIngredient} className="add-ingredient" autoComplete="off">
         <input
           ref={inputRef}
           id='input'
