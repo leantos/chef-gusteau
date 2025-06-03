@@ -1,7 +1,3 @@
-Certainly! Here's a comprehensive README for the [chef-gusteau](https://github.com/leantos/chef-gusteau) project:
-
----
-
 # 👨‍🍳 Chef Gusteau
 
 **Chef Gusteau** is a dynamic ReactJS application that leverages Mistral AI to generate personalized recipes based on user-provided ingredients. Inspired by the culinary genius of Chef Gusteau, this app aims to bring gourmet cooking to your fingertips.
